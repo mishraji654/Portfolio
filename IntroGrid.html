@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IntroGrid Motion Transition — Ayushmaan</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="project-detail.css" />
+  </head>
+
+  <body>
+    <header class="nav">
+      <div class="nav-inner">
+        <a href="./index.html" class="nav-logo">
+          <span class="logo-bracket">&lt;</span>
+          Portfolio
+          <span class="logo-bracket">/&gt;</span>
+        </a>
+
+        <nav class="nav-links">
+          <a href="./index.html#work">Work</a>
+          <a href="./index.html#skills">Skills</a>
+          <a href="./index.html#about">About</a>
+          <a href="./index.html#contact" class="nav-cta"> Start a Project </a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="pd-main">
+      <div class="pd-header">
+        <a href="./index.html#work" class="pd-back"> ← Back to Work </a>
+
+        <p class="section-eyebrow">// Interactive Web Experience</p>
+
+        <h1 class="pd-title">IntroGrid Motion Transition</h1>
+
+        <p class="pd-sub">
+          An interactive grid-based motion experience showcasing fluid page
+          transitions, animated layouts, and modern UI interactions designed to
+          deliver an engaging visual experience.
+        </p>
+
+        <div class="pd-meta">
+          <span>
+            <strong>Built by</strong>
+            Ayushmaan
+          </span>
+
+          <span>
+            <strong>Category</strong>
+            Interactive UI Experiment
+          </span>
+
+          <span>
+            <strong>Stack</strong>
+            HTML • CSS • JavaScript • CSS Grid • GSAP
+          </span>
+        </div>
+      </div>
+
+      <div class="pd-gallery">
+        <figure class="pd-shot">
+          <img
+            src="IntroGrid1.png"
+            alt="Landing Page"
+            onerror="this.parentElement.classList.add('img-missing')"
+          />
+
+          <figcaption>Interactive Landing Experience</figcaption>
+        </figure>
+
+        <figure class="pd-shot">
+          <img
+            src="IntroGrid2.png"
+            alt="Canvas Examples"
+            onerror="this.parentElement.classList.add('img-missing')"
+          />
+
+          <figcaption>Canvas Rendered UI Components</figcaption>
+        </figure>
+      </div>
+
+      <div class="pd-details">
+        <h2>Project Overview</h2>
+
+        <p>
+          Intro Grid Motion Transition is an interactive web experience that
+          showcases dynamic grid-based animations and smooth page transitions.
+          The project combines modern motion design with immersive interactions,
+          creating an engaging landing page where visual elements respond
+          seamlessly to user navigation and input.
+        </p>
+
+        <br />
+
+        <h2>Key Features</h2>
+
+        <ul class="pd-points">
+          <li>Interactive grid layout with immersive motion transitions.</li>
+          <li>Smooth image expansion and page reveal animations.</li>
+          <li>Fluid hover interactions with responsive visual feedback.</li>
+          <li>Modern landing page design with minimal user interface.</li>
+          <li>
+            Seamless navigation between sections using animated transitions.
+          </li>
+          <li>
+            Responsive experience optimized for desktop and modern browsers.
+          </li>
+        </ul>
+
+        <h2>Technical Highlights</h2>
+
+        <ul class="pd-points">
+          <li>Built using modern JavaScript animation techniques.</li>
+          <li>
+            CSS transforms and transitions for GPU-accelerated animations.
+          </li>
+          <li>Grid-based layout for flexible and responsive positioning.</li>
+          <li>Optimized rendering using requestAnimationFrame.</li>
+          <li>Smooth animation sequencing with timeline-based motion.</li>
+          <li>Performance-focused implementation for fluid interactions.</li>
+        </ul>
+
+        <div class="pd-links">
+          <a
+            href="https://github.com/codrops/IntroGridMotionTransition"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary"
+          >
+            View on GitHub
+          </a>
+
+          <a
+            href="https://tympanus.net/Development/IntroGridMotionTransition/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-ghost-light"
+          >
+            Live Demo
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Ayushmaan Singh Yadav</p>
+
+      <a href="./index.html#top" class="footer-top"> Back to top ↑ </a>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

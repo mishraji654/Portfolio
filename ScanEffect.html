@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ScanEffect — Ayushmaan</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="project-detail.css" />
+  </head>
+
+  <body>
+    <header class="nav">
+      <div class="nav-inner">
+        <a href="./index.html" class="nav-logo">
+          <span class="logo-bracket">&lt;</span>
+          Portfolio
+          <span class="logo-bracket">/&gt;</span>
+        </a>
+
+        <nav class="nav-links">
+          <a href="./index.html#work">Work</a>
+          <a href="./index.html#skills">Skills</a>
+          <a href="./index.html#about">About</a>
+          <a href="./index.html#contact" class="nav-cta"> Start a Project </a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="pd-main">
+      <div class="pd-header">
+        <a href="./index.html#work" class="pd-back"> ← Back to Work </a>
+
+        <p class="section-eyebrow">// Interactive Web Experience</p>
+
+        <h1 class="pd-title">ScanEffect</h1>
+
+        <p class="pd-sub">
+          An interactive WebGL experiment showcasing a real-time depth-based
+          scanning effect with dynamic shaders, immersive lighting, and fluid
+          camera movement. The project demonstrates modern graphics rendering
+          techniques, cinematic animations, and high-performance visual effects
+          to create a unique and engaging web experience.
+        </p>
+
+        <div class="pd-meta">
+          <span>
+            <strong>Built by</strong>
+            Ayushmaan
+          </span>
+
+          <span>
+            <strong>Category</strong>
+            Interactive UI Experiment
+          </span>
+
+          <span>
+            <strong>Stack</strong>
+            HTML • CSS • JavaScript • Three.js • WebGL • GLSL Shaders
+          </span>
+        </div>
+      </div>
+
+      <div class="pd-gallery">
+        <figure class="pd-shot">
+          <img
+            src="Scan1.png"
+            alt="Landing Page"
+            onerror="this.parentElement.classList.add('img-missing')"
+          />
+
+          <figcaption>Interactive Landing Experience</figcaption>
+        </figure>
+
+        <figure class="pd-shot">
+          <img
+            src="Scan2.png"
+            alt="Canvas Examples"
+            onerror="this.parentElement.classList.add('img-missing')"
+          />
+
+          <figcaption>Canvas Rendered UI Components</figcaption>
+        </figure>
+      </div>
+
+      <div class="pd-details">
+        <h2>Project Overview</h2>
+
+        <p>
+          This project demonstrates a real-time depth-based scanning effect that
+          blends WebGL rendering, custom shaders, and smooth animations to
+          create an immersive visual experience. By utilizing depth maps and
+          dynamic lighting, the scene produces realistic scan transitions while
+          maintaining high rendering performance. The project highlights modern
+          graphics techniques, interactive motion design, and creative visual
+          storytelling for the web.
+        </p>
+
+        <br />
+
+        <h2>Key Features</h2>
+
+        <ul class="pd-points">
+          <li>
+            Real-time depth-based scanning effect with dynamic visual
+            transitions.
+          </li>
+
+          <li>Interactive 3D environment powered by modern WebGL rendering.</li>
+
+          <li>Smooth camera movement and immersive scene navigation.</li>
+
+          <li>Animated lighting and shader-driven visual effects.</li>
+
+          <li>High-performance rendering optimized for modern browsers.</li>
+
+          <li>Responsive layout with adaptive canvas rendering.</li>
+
+          <li>Seamless animation timeline for fluid user interactions.</li>
+
+          <li>Minimal interface focused on cinematic visual storytelling.</li>
+        </ul>
+
+        <h2>Technical Highlights</h2>
+
+        <ul class="pd-points">
+          <li>
+            WebGL-powered rendering pipeline for GPU-accelerated graphics.
+          </li>
+
+          <li>
+            Three.js used for scene management, camera, and object rendering.
+          </li>
+
+          <li>GLSL shaders for depth mapping and custom scan effects.</li>
+
+          <li>Optimized animation loop using requestAnimationFrame.</li>
+
+          <li>Efficient texture loading and asset management.</li>
+
+          <li>Modular JavaScript architecture for maintainable code.</li>
+
+          <li>Responsive rendering with automatic viewport resizing.</li>
+
+          <li>
+            Performance optimization through lightweight rendering techniques.
+          </li>
+        </ul>
+
+        <div class="pd-links">
+          <a
+            href="https://github.com/d3adrabbit/ScanningEffectWithDepthMap"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary"
+          >
+            View on GitHub
+          </a>
+
+          <a
+            href="https://tympanus.net/Development/ScanEffect/effect1/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-ghost-light"
+          >
+            Live Demo
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Ayushmaan Singh Yadav</p>
+
+      <a href="./index.html#top" class="footer-top"> Back to top ↑ </a>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

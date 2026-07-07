@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Delphi — Infinite Tunnel Effect | Ayushmaan Singh Yadav</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="project-detail.css" />
+  </head>
+
+  <body>
+    <header class="nav">
+      <div class="nav-inner">
+        <a href="./index.html" class="nav-logo">
+          <span class="logo-bracket">&lt;</span>
+          Portfolio
+          <span class="logo-bracket">/&gt;</span>
+        </a>
+
+        <nav class="nav-links" aria-label="Primary">
+          <a href="./index.html#work">Work</a>
+          <a href="./index.html#skills">Skills</a>
+          <a href="./index.html#about">About</a>
+          <a href="./index.html#contact" class="nav-cta"> Start a Project </a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="pd-main">
+      <div class="pd-header">
+        <a href="./index.html#work" class="pd-back"> ← Back to Work </a>
+
+        <p class="section-eyebrow">// Interactive 3D Experience</p>
+
+        <h1 class="pd-title">Delphi — Infinite Tunnel Effect</h1>
+
+        <p class="pd-sub">
+          Delphi is a visually immersive 3D web experience featuring an infinite
+          tunnel environment, floating visual elements, cinematic camera
+          movement, and smooth interactions. Built with modern web technologies,
+          the project demonstrates how interactive 3D scenes can transform
+          traditional landing pages into engaging digital experiences.
+        </p>
+
+        <div class="pd-meta">
+          <span>
+            <strong>Built by</strong>
+            Ayushmaan Singh Yadav
+          </span>
+
+          <span>
+            <strong>Category</strong>
+            Interactive 3D Landing Page
+          </span>
+
+          <span>
+            <strong>Stack</strong>
+            HTML, CSS, JavaScript, Three.js, GSAP
+          </span>
+        </div>
+      </div>
+
+      <div class="pd-gallery">
+        <figure class="pd-shot">
+          <img
+            src="Delphi1.png"
+            alt="Delphi Hero Section"
+            onerror="this.parentElement.classList.add('img-missing')"
+          />
+
+          <figcaption>Immersive 3D Hero Experience</figcaption>
+        </figure>
+
+        <figure class="pd-shot">
+          <img
+            src="Delphi2.png"
+            alt="Infinite Tunnel Interface"
+            onerror="this.parentElement.classList.add('img-missing')"
+          />
+
+          <figcaption>
+            Infinite Tunnel Environment & Floating Media Panels
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="pd-details">
+        <h2>Project Overview</h2>
+
+        <p>
+          Delphi explores the fusion of storytelling, animation, and 3D web
+          graphics. The project creates a futuristic browsing experience by
+          placing content inside an endless tunnel-like environment. Through
+          perspective-based layouts, smooth transitions, and floating media
+          assets, users experience a highly engaging interface that feels
+          dynamic and alive.
+        </p>
+
+        <br />
+
+        <h2>Key Features</h2>
+
+        <ul class="pd-points">
+          <li>
+            Infinite 3D tunnel environment with depth-based visual effects.
+          </li>
+
+          <li>Smooth camera movement and immersive scene transitions.</li>
+
+          <li>Interactive floating image panels positioned in 3D space.</li>
+
+          <li>Modern landing page with bold typography and engaging CTAs.</li>
+
+          <li>Responsive navigation and user-friendly interface.</li>
+
+          <li>GPU-accelerated rendering powered by Three.js.</li>
+
+          <li>High-performance animations and transitions using GSAP.</li>
+
+          <li>
+            Clean visual design focused on creativity and user engagement.
+          </li>
+
+          <li>Smooth interaction patterns optimized for desktop devices.</li>
+        </ul>
+
+        <h2>Technical Highlights</h2>
+
+        <ul class="pd-points">
+          <li>Three.js based scene rendering and perspective management.</li>
+
+          <li>Advanced animation sequencing with GSAP timelines.</li>
+
+          <li>Optimized rendering pipeline for fluid performance.</li>
+
+          <li>Modular project structure for scalable development.</li>
+        </ul>
+
+        <div class="pd-links">
+          <a
+            href="https://github.com/thebuggeddev/delphi"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary"
+          >
+            View on GitHub
+          </a>
+
+          <a
+            href="https://delphi-three.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-ghost-light"
+          >
+            Live Demo
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Ayushmaan Singh Yadav</p>
+
+      <a href="./index.html#top" class="footer-top"> Back to top ↑ </a>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

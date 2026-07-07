@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NewsHub — Ayushmaan & Rimjhim</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css">
+<link rel="stylesheet" href="project-detail.css">
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="./index.html" class="nav-logo"><span class="logo-bracket">&lt;</span>Portfolio<span class="logo-bracket">/&gt;</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="./index.html#work">Work</a>
+      <a href="./index.html#skills">Skills</a>
+      <a href="./index.html#about">About</a>
+      <a href="./index.html#contact" class="nav-cta">Start a project</a>
+    </nav>
+  </div>
+</header>
+<main class="pd-main">
+  <div class="pd-header">
+    <a href="./index.html#work" class="pd-back">← Back to work</a>
+    <p class="section-eyebrow">// newshub.native.js</p>
+    <h1 class="pd-title">NewsHub — News App</h1>
+    <p class="pd-sub">Category-based news browsing with infinite scroll and real-time refresh, wrapped in Firebase authentication for secure sign-in.</p>
+    <div class="pd-meta">
+      <span><strong>Built by</strong> Ayushmaan Singh Yadav</span>
+      <span><strong>Timeline</strong> Apr 2025</span>
+      <span><strong>Stack</strong> React Native, Firebase Auth, React Navigation</span>
+    </div>
+  </div>
+  <div class="pd-gallery">
+    <figure class="pd-shot">
+      <img src="NX1.png" alt="NewsHub — category browsing" onerror="this.parentElement.classList.add('img-missing')">
+      <figcaption>Category-based news browsing</figcaption>
+    </figure>
+     <figure class="pd-shot">
+      <img src="NX2.png" alt="NewsHub — category browsing" onerror="this.parentElement.classList.add('img-missing')">
+      <figcaption>Category-based news browsing</figcaption>
+    </figure>
+     <figure class="pd-shot">
+      <img src="NX3.png" alt="NewsHub — category browsing" onerror="this.parentElement.classList.add('img-missing')">
+      <figcaption>Category-based news browsing</figcaption>
+    </figure>
+     <figure class="pd-shot">
+      <img src="NX4.png" alt="NewsHub — category browsing" onerror="this.parentElement.classList.add('img-missing')">
+      <figcaption>Category-based news browsing</figcaption>
+    </figure>
+    </figure>
+     <figure class="pd-shot">
+      <img src="NX5.png" alt="NewsHub — category browsing" onerror="this.parentElement.classList.add('img-missing')">
+      <figcaption>Category-based news browsing</figcaption>
+    </figure>
+    <figure class="pd-shot">
+      <img src="NX6.png" alt="NewsHub — login screen" onerror="this.parentElement.classList.add('img-missing')">
+      <figcaption>Firebase Authentication — login &amp; signup</figcaption>
+    </figure>
+  </div>
+  <div class="pd-details">
+    <h2>What we built</h2>
+    <ul class="pd-points">
+      <li>Smooth screen transitions via React Navigation</li>
+      <li>Infinite scroll and pull-to-refresh for live content</li>
+      <li>Firebase Authentication for secure login and signup</li>
+      <li>Efficient API handling for fast, organized content delivery</li>
+    </ul>
+    <div class="pd-links">
+      <a href="https://github.com/asteriskayush007/NewzX.git" class="btn btn-primary">View live demo</a>
+      <a href="https://github.com/asteriskayush007/NewzX.git" class="btn btn-ghost-light">View on GitHub</a>
+    </div>
+  </div>
+</main>
+<footer class="footer">
+  <p>© <span id="year"></span> Ayushmaan Singh Yadav &amp; Rimjhim Mishra.</p>
+  <a href="./index.html#top" class="footer-top">Back to top ↑</a>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

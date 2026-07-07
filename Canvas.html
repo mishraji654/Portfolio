@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML In Canvas — Rimjhim</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="project-detail.css" />
+  </head>
+
+  <body>
+    <header class="nav">
+      <div class="nav-inner">
+        <a href="./index.html" class="nav-logo">
+          <span class="logo-bracket">&lt;</span>
+          Portfolio
+          <span class="logo-bracket">/&gt;</span>
+        </a>
+
+        <nav class="nav-links">
+          <a href="./index.html#work">Work</a>
+          <a href="./index.html#skills">Skills</a>
+          <a href="./index.html#about">About</a>
+          <a href="./index.html#contact" class="nav-cta"> Start a Project </a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="pd-main">
+      <div class="pd-header">
+        <a href="./index.html#work" class="pd-back"> ← Back to Work </a>
+
+        <p class="section-eyebrow">// Interactive Web Experience</p>
+
+        <h1 class="pd-title">HTML In Canvas</h1>
+
+        <p class="pd-sub">
+          HTML In Canvas is an interactive web experiment that combines
+          traditional HTML interfaces with the Canvas API to create smooth,
+          immersive user experiences. The project demonstrates modern UI
+          rendering, fluid animations, seamless transitions, and
+          high-performance interactions while maintaining clean, accessible HTML
+          structures underneath.
+        </p>
+
+        <div class="pd-meta">
+          <span>
+            <strong>Built by</strong>
+            Rimjhim
+          </span>
+
+          <span>
+            <strong>Category</strong>
+            Interactive UI Experiment
+          </span>
+
+          <span>
+            <strong>Stack</strong>
+            HTML • CSS • JavaScript • Canvas API
+          </span>
+        </div>
+      </div>
+
+      <div class="pd-gallery">
+        <figure class="pd-shot">
+          <img
+            src="canvas1.png"
+            alt="Landing Page"
+            onerror="this.parentElement.classList.add('img-missing')"
+          />
+
+          <figcaption>Interactive Landing Experience</figcaption>
+        </figure>
+
+        <figure class="pd-shot">
+          <img
+            src="canvas2.png"
+            alt="Canvas Examples"
+            onerror="this.parentElement.classList.add('img-missing')"
+          />
+
+          <figcaption>Canvas Rendered UI Components</figcaption>
+        </figure>
+      </div>
+
+      <div class="pd-details">
+        <h2>Project Overview</h2>
+
+        <p>
+          This project explores how modern HTML interfaces can be rendered and
+          animated within a Canvas environment to achieve smooth interactions
+          without sacrificing usability. It focuses on combining performance,
+          clean layouts, and creative visual effects to deliver an engaging
+          browsing experience.
+        </p>
+
+        <br />
+
+        <h2>Key Features</h2>
+
+        <ul class="pd-points">
+          <li>Canvas-powered rendering with smooth animations.</li>
+
+          <li>Interactive navigation and UI transitions.</li>
+
+          <li>Responsive layouts optimized for desktop and mobile devices.</li>
+
+          <li>Modern typography with clean visual hierarchy.</li>
+
+          <li>
+            Lightweight architecture built using vanilla HTML, CSS, and
+            JavaScript.
+          </li>
+
+          <li>
+            High-performance rendering for fluid scrolling and interactions.
+          </li>
+
+          <li>Modular structure allowing multiple interactive UI examples.</li>
+
+          <li>
+            Minimal yet elegant design focused on usability and user experience.
+          </li>
+        </ul>
+
+        <div class="pd-links">
+          <a
+            href="https://github.com/motiontx/html-in-canvas/tree/main"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary"
+          >
+            View on GitHub
+          </a>
+
+          <a
+            href="https://html-in-canvas.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-ghost-light"
+          >
+            Live Demo
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Ayushmaan Singh Yadav</p>
+
+      <a href="./index.html#top" class="footer-top"> Back to top ↑ </a>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Todo Management App — Ayushmaan & Rimjhim</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css">
+<link rel="stylesheet" href="project-detail.css">
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="./index.html" class="nav-logo"><span class="logo-bracket">&lt;</span>Portfolio<span class="logo-bracket">/&gt;</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="./index.html#work">Work</a>
+      <a href="./index.html#skills">Skills</a>
+      <a href="./index.html#about">About</a>
+      <a href="./index.html#contact" class="nav-cta">Start a project</a>
+    </nav>
+  </div>
+</header>
+<main class="pd-main">
+  <div class="pd-header">
+    <a href="./index.html#work" class="pd-back">← Back to work</a>
+    <p class="section-eyebrow">// todo-manager.native.js</p>
+    <h1 class="pd-title">Todo Management App</h1>
+    <p class="pd-sub">Cross-platform task manager with separate user and admin panels, built in React Native — the project built in parallel to compare notes on state management.</p>
+    <div class="pd-meta">
+      <span><strong>Built by</strong> Ayushmaan + Rimjhim</span>
+      <span><strong>Timeline</strong> Apr 2025</span>
+      <span><strong>Stack</strong> React Native, Expo, Axios, React Native Paper</span>
+    </div>
+  </div>
+  <div class="pd-gallery">
+    <figure class="pd-shot">
+      <img src="./TD1.png" alt="Todo app — user panel" onerror="this.parentElement.classList.add('img-missing')">
+      <figcaption>User panel — CRUD todos with date-time scheduling</figcaption>
+    </figure>
+    <figure class="pd-shot">
+      <img src="./TD2.png" alt="Todo app — admin dashboard" onerror="this.parentElement.classList.add('img-missing')">
+      <figcaption>Admin dashboard — data visualization with Chart Kit</figcaption>
+    </figure>
+  </div>
+  <div class="pd-details">
+    <h2>What we built</h2>
+    <ul class="pd-points">
+      <li>Full CRUD with date-time scheduling and Stack Navigation</li>
+      <li>Admin dashboards visualized with React Native Chart Kit</li>
+      <li>PWA support — offline-ready, installable, fast-loading</li>
+      <li>Seamless UI components using React Native Paper and Date Pickers</li>
+    </ul>
+    <div class="pd-links">
+      <a href="#" class="btn btn-primary">View live demo</a>
+      <a href="#" class="btn btn-ghost-light">View on GitHub</a>
+    </div>
+  </div>
+</main>
+<footer class="footer">
+  <p>© <span id="year"></span> Ayushmaan Singh Yadav &amp; Rimjhim Mishra.</p>
+  <a href="./index.html#top" class="footer-top">Back to top ↑</a>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

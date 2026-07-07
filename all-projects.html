@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Projects — Ayushmaan & Rimjhim</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="project-detail.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="nav-inner">
+        <a href="./index.html" class="nav-logo"
+          ><span class="logo-bracket">&lt;</span>Portfolio<span
+            class="logo-bracket"
+            >/&gt;</span
+          ></a
+        >
+        <nav class="nav-links" aria-label="Primary">
+          <a href="./index.html#work">Work</a>
+          <a href="./index.html#skills">Skills</a>
+          <a href="./index.html#about">About</a>
+          <a href="./index.html#contact" class="nav-cta">Start a project</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="pd-main">
+      <div class="pd-header">
+        <a href="./index.html#work" class="pd-back">← Back to work</a>
+        <p class="section-eyebrow">// all-projects.json</p>
+        <h1 class="pd-title">All Projects</h1>
+        <p class="pd-sub">
+          Every project we've shipped so far — apps, client work, and Figma
+          design pieces.
+        </p>
+      </div>
+
+      <div
+        class="project-grid"
+        id="allProjectGrid"
+        style="max-width: none; padding: 0; margin: 0 0 3rem"
+      >
+        <a class="project-card" href="ecommerce.html">
+          <div class="project-tab">
+            <span class="tab-dot dot-ay" aria-hidden="true"></span>
+            <span class="tab-filename">ecommerce-frontend.jsx</span>
+            <span class="tab-author">Ayushmaan</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">E-Commerce Platform</h3>
+            <p class="project-desc">
+              Full client + admin experience with cart, checkout, and complete
+              CRUD product management.
+            </p>
+            <div class="project-tags">
+              <span>React.js</span><span>Axios</span><span>JSON Server</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="project-card" href="todo.html">
+          <div class="project-tab">
+            <span class="tab-dot dot-both" aria-hidden="true"></span>
+            <span class="tab-filename">todo-manager.native.js</span>
+            <span class="tab-author">Ayushmaan + Rimjhim</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Todo Management App</h3>
+            <p class="project-desc">
+              Cross-platform task manager with user and admin panels, built in
+              React Native.
+            </p>
+            <div class="project-tags">
+              <span>React Native</span><span>Expo</span><span>Axios</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="project-card" href="newshub.html">
+          <div class="project-tab">
+            <span class="tab-dot dot-ay" aria-hidden="true"></span>
+            <span class="tab-filename">newshub.native.js</span>
+            <span class="tab-author">Ayushmaan</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">NewsHub — News App</h3>
+            <p class="project-desc">
+              Category-based news browsing with infinite scroll and Firebase
+              authentication.
+            </p>
+            <div class="project-tags">
+              <span>React Native</span><span>Firebase Auth</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="project-card" href="movieflix.html">
+          <div class="project-tab">
+            <span class="tab-dot dot-rm" aria-hidden="true"></span>
+            <span class="tab-filename">movieflix.native.js</span>
+            <span class="tab-author">Rimjhim</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">MovieFlix — Movie Discovery App</h3>
+            <p class="project-desc">
+              Real-time movie data from the OMDB API with detail screens and
+              trailer support.
+            </p>
+            <div class="project-tags">
+              <span>React Native</span><span>OMDB API</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="project-card" href="eleventhsquare.html">
+          <div class="project-tab">
+            <span class="tab-dot dot-both" aria-hidden="true"></span>
+            <span class="tab-filename">eleventh-square.html</span>
+            <span class="tab-author">Ayushmaan + Rimjhim</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Eleventh Square — Client Website</h3>
+            <p class="project-desc">
+              Multi-page agency-style client website — brand, services, and
+              content pages.
+            </p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="project-card" href="academic-portfolio.html">
+          <div class="project-tab">
+            <span class="tab-dot dot-both" aria-hidden="true"></span>
+            <span class="tab-filename">academic-portfolio.fig</span>
+            <span class="tab-author">Ayushmaan + Rimjhim</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Academic Portfolio Website</h3>
+            <p class="project-desc">
+              Faculty portfolio for Dr. Khadim Moin Siddiqui, designed
+              end-to-end in Figma Make.
+            </p>
+            <div class="project-tags">
+              <span>Figma Make</span><span>UI/UX</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="project-card" href="figma-design.html">
+          <div class="project-tab">
+            <span class="tab-dot dot-both" aria-hidden="true"></span>
+            <span class="tab-filename">tour-mania.fig</span>
+            <span class="tab-author">Ayushmaan + Rimjhim</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Tour-Mania — Travel Landing Page</h3>
+            <p class="project-desc">
+              Travel-companion landing page concept — hero, testimonials, and
+              footer.
+            </p>
+            <div class="project-tags">
+              <span>Figma</span><span>Travel</span>
+            </div>
+          </div>
+        </a>
+
+
+        <a class="project-card" href="IntroGrid.html">
+          <div class="project-tab">
+            <span class="tab-dot dot-both" aria-hidden="true"></span>
+            <span class="tab-filename">IntroGrid Motion Transition</span>
+            <span class="tab-author">Ayushmaan</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">IntroGrid Motion Transition</h3>
+            <p class="project-desc">
+              A motion design concept for an intro grid animation.
+            </p>
+            <div class="project-tags">
+              <span>Web</span><span>Motion Design</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="project-card" href="Ivortex-Gallery.html">
+          <div class="project-tab">
+            <span class="tab-dot dot-both" aria-hidden="true"></span>
+            <span class="tab-filename">Ivortex Gallery</span>
+            <span class="tab-author">Rimjhim</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Ivortex Gallery</h3>
+            <p class="project-desc">
+                A motion design concept for a gallery transition effect.
+            </p>
+            <div class="project-tags">
+              <span>Web</span><span>Motion Design</span>
+            </div>
+          </div>
+        </a>
+
+
+        <a class="project-card" href="ScanEffect.html">
+          <div class="project-tab">
+            <span class="tab-dot dot-both" aria-hidden="true"></span>
+            <span class="tab-filename">ScanEffect</span>
+            <span class="tab-author">Ayushmaan</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">ScanEffect</h3>
+            <p class="project-desc">
+                A WebGPU-powered visual experiment that explores a scanning effect using a depth map and procedural masking, rendered with custom shaders and animated in real time.
+            </p>
+            <div class="project-tags">
+              <span>Figma</span><span>ScanEffect</span>
+            </div>
+          </div>
+        </a>
+
+
+        <a class="project-card" href="delphi.html">
+          <div class="project-tab">
+            <span class="tab-dot dot-both" aria-hidden="true"></span>
+            <span class="tab-filename">delphi - Infinite Tunnel Effect </span>
+            <span class="tab-author">Ayushmaan</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">delphi - Infinite Tunnel Effect </h3>
+            <p class="project-desc">
+                A WebGPU-powered visual experiment that creates an infinite tunnel effect using a depth map and procedural masking, rendered with custom shaders and animated in real time.
+            </p>
+            <div class="project-tags">
+              <span>Figma</span><span>Infinite Tunnel Effect</span>
+            </div>
+          </div>
+        </a>
+
+
+        <a class="project-card" href="Canvas.html">
+          <div class="project-tab">
+            <span class="tab-dot dot-both" aria-hidden="true"></span>
+            <span class="tab-filename">Html In Canvas</span>
+            <span class="tab-author">Rimjhim</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Html In Canvas</h3>
+            <p class="project-desc">
+                A WebGPU-powered visual experiment that renders HTML content within a canvas element, allowing for dynamic and interactive web experiences with custom shaders and real-time animations.
+            </p>
+            <div class="project-tags">
+              <span>Web</span><span>Html In Canvas</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>
+        © <span id="year"></span> Ayushmaan Singh Yadav &amp; Rimjhim Mishra.
+      </p>
+      <a href="./index.html#top" class="footer-top">Back to top ↑</a>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,688 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ayushmaan & Rimjhim — Frontend & Mobile App Developers</title>
+    <meta
+      name="description"
+      content="Portfolio of Ayushmaan Singh Yadav and Rimjhim Mishra — Frontend & React Native developers with UI/UX design skills."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  </head>
+  <body>
+    <!-- ============ INTRO — circular hole zoom reveal before landing page ============ -->
+    <div class="intro-wrapper" id="introWrapper">
+      <div class="intro-content">
+        <section class="intro-section-bg">
+          <p class="intro-headline">
+            <span class="intro-line">Two developers.</span>
+            <span class="intro-line">One shared canvas.</span>
+            <span class="intro-line intro-line-accent"
+              >Interfaces that ship.</span
+            >
+          </p>
+        </section>
+      </div>
+      <div class="intro-hole-container">
+        <div class="intro-hole">
+          <div class="intro-hole-inner">
+            <div class="intro-peek-hero">
+              <div class="intro-peek-grid" aria-hidden="true"></div>
+              <div class="intro-peek-cursors" aria-hidden="true">
+                <span class="intro-peek-cursor intro-peek-cursor-ay"></span>
+                <span class="intro-peek-cursor intro-peek-cursor-rm"></span>
+              </div>
+              <p class="intro-peek-title">
+                <span>Welcome</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="intro-scroll-cue">
+        <span>scroll</span><span class="intro-scroll-line"></span>
+      </p>
+    </div>
+
+    <!-- Custom cursor dots (decorative, desktop only) -->
+    <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+    <!-- ============ NAV ============ -->
+    <header class="nav" id="nav">
+      <div class="nav-inner">
+        <a href="#top" class="nav-logo">
+          <span class="logo-bracket">&lt;</span>Portfolio<span
+            class="logo-bracket"
+            >/&gt;</span
+          >
+        </a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#work">Work</a>
+          <a href="#skills">Skills</a>
+          <a href="#about">About</a>
+          <a href="#contact" class="nav-cta">Start a project</a>
+        </nav>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="nav-mobile" id="navMobile">
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#contact">Start a project</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- ============ HERO — shared canvas ============ -->
+      <section class="hero" id="hero">
+        <div class="hero-grid" aria-hidden="true"></div>
+
+        <!-- animated collaborator cursors -->
+        <div class="cursor-layer" aria-hidden="true">
+          <div class="fake-cursor cursor-ay" id="cursorAy">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <path
+                d="M1 1L1 15.5L5.2 11.8L7.6 16.9L9.8 15.9L7.4 10.8L13 10.2L1 1Z"
+                fill="currentColor"
+              />
+            </svg>
+            <span class="cursor-tag">Ayushmaan</span>
+          </div>
+          <div class="fake-cursor cursor-rm" id="cursorRm">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <path
+                d="M1 1L1 15.5L5.2 11.8L7.6 16.9L9.8 15.9L7.4 10.8L13 10.2L1 1Z"
+                fill="currentColor"
+              />
+            </svg>
+            <span class="cursor-tag">Rimjhim</span>
+          </div>
+        </div>
+
+        <div class="hero-content">
+          <p class="hero-eyebrow">
+            <span class="dot-live" aria-hidden="true"></span>frontend-studio.jsx
+            — 2 collaborators editing
+          </p>
+          <h1 class="hero-title">
+            <span class="hero-line">Two developers.</span>
+            <span class="hero-line">One shared canvas.</span>
+            <span class="hero-line hero-line-accent"
+              >Interfaces that ship.</span
+            >
+          </h1>
+          <p class="hero-sub">
+            We're <strong>Ayushmaan Singh Yadav</strong> &amp;
+            <strong>Rimjhim Mishra</strong> — a two-person studio building web
+            frontends, React Native apps, and the Figma files that come before
+            them. Same repo, same eye for detail, twice the hands.
+          </p>
+          <div class="hero-actions">
+            <a href="#work" class="btn btn-primary">See the work</a>
+            <a href="#contact" class="btn btn-ghost">Get a quote</a>
+          </div>
+          <div class="hero-stack" role="list" aria-label="Core stack">
+            <span role="listitem">React.js</span>
+            <span class="stack-sep">·</span>
+            <span role="listitem">React Native</span>
+            <span class="stack-sep">·</span>
+            <span role="listitem">Figma</span>
+            <span class="stack-sep">·</span>
+            <span role="listitem">Redux Toolkit</span>
+          </div>
+        </div>
+
+        <div class="scroll-cue" aria-hidden="true">
+          <span>scroll</span>
+          <div class="scroll-line"></div>
+        </div>
+      </section>
+
+      <!-- ============ TRUST / STRIP ============ -->
+      <section class="strip">
+        <div class="strip-inner">
+          <p class="strip-item">
+            <span class="strip-num">12+</span>shipped projects
+          </p>
+          <p class="strip-item">
+            <span class="strip-num">2</span>disciplines, one team — dev &amp;
+            design
+          </p>
+          <p class="strip-item">
+            <span class="strip-num">1</span>IEEE paper, published
+          </p>
+          <p class="strip-item">
+            <span class="strip-num">100%</span>cross‑platform ready
+          </p>
+        </div>
+      </section>
+
+      <!-- ============ WORK ============ -->
+      <section class="work" id="work">
+        <div class="section-head">
+          <p class="section-eyebrow">// selected-work</p>
+          <h2 class="section-title">Open tabs, real projects</h2>
+          <p class="section-sub">
+            Every project below is a file we'd actually still have open — no
+            filler case studies. Filter by who built it, or see everything.
+          </p>
+        </div>
+
+        <div
+          class="tab-filters"
+          role="tablist"
+          aria-label="Filter projects by author"
+        >
+          <button
+            class="tab-filter is-active"
+            data-filter="all"
+            role="tab"
+            aria-selected="true"
+          >
+            All files
+          </button>
+          <button
+            class="tab-filter"
+            data-filter="ay"
+            role="tab"
+            aria-selected="false"
+          >
+            Ayushmaan
+          </button>
+          <button
+            class="tab-filter"
+            data-filter="rm"
+            role="tab"
+            aria-selected="false"
+          >
+            Rimjhim
+          </button>
+          <button
+            class="tab-filter"
+            data-filter="both"
+            role="tab"
+            aria-selected="false"
+          >
+            Paired
+          </button>
+        </div>
+
+        <div class="project-grid" id="projectGrid">
+          <!-- Project 1 -->
+          <a
+            class="project-card"
+            data-author="ay"
+            href="ecommerce.html"
+          >
+            <div class="project-tab">
+              <span class="tab-dot dot-ay" aria-hidden="true"></span>
+              <span class="tab-filename">ecommerce-frontend.jsx</span>
+              <span class="tab-author">Ayushmaan</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">E-Commerce Platform</h3>
+              <p class="project-desc">
+                A full client + admin experience — browsing, cart, checkout on
+                one side; complete CRUD product management with live REST APIs
+                and dynamic routing on the other.
+              </p>
+              <ul class="project-points">
+                <li>
+                  Interactive client panel with cart &amp; smooth navigation
+                </li>
+                <li>Admin panel with full create / update / delete flows</li>
+                <li>
+                  REST API integration + dynamic routing for real-time data
+                </li>
+              </ul>
+              <div class="project-tags">
+                <span>React.js</span><span>Axios</span><span>JSON Server</span
+                ><span>Routing</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Project 2 -->
+          <a class="project-card" data-author="both" href="todo.html">
+            <div class="project-tab">
+              <span class="tab-dot dot-both" aria-hidden="true"></span>
+              <span class="tab-filename">todo-manager.native.js</span>
+              <span class="tab-author">Ayushmaan + Rimjhim</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Todo Management App</h3>
+              <p class="project-desc">
+                Cross-platform task manager with separate user and admin panels,
+                built in React Native — the project we built in parallel to
+                compare notes on state management.
+              </p>
+              <ul class="project-points">
+                <li>
+                  Full CRUD with date-time scheduling &amp; Stack Navigation
+                </li>
+                <li>Admin dashboards visualized with React Native Chart Kit</li>
+                <li>PWA support — offline-ready, installable, fast-loading</li>
+              </ul>
+              <div class="project-tags">
+                <span>React Native</span><span>Expo</span><span>Axios</span
+                ><span>React Native Paper</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Project 3 -->
+          <a class="project-card" data-author="ay" href="newshub.html">
+            <div class="project-tab">
+              <span class="tab-dot dot-ay" aria-hidden="true"></span>
+              <span class="tab-filename">newshub.native.js</span>
+              <span class="tab-author">Ayushmaan</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">NewsHub — News App</h3>
+              <p class="project-desc">
+                Category-based news browsing with infinite scroll and real-time
+                refresh, wrapped in Firebase authentication for secure sign-in.
+              </p>
+              <ul class="project-points">
+                <li>Smooth screen transitions via React Navigation</li>
+                <li>Infinite scroll + pull-to-refresh for live content</li>
+                <li>Firebase Authentication for login &amp; signup</li>
+              </ul>
+              <div class="project-tags">
+                <span>React Native</span><span>Firebase Auth</span
+                ><span>React Navigation</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Project 4 -->
+          <a
+            class="project-card"
+            data-author="rm"
+            href="movieflix.html"
+          >
+            <div class="project-tab">
+              <span class="tab-dot dot-rm" aria-hidden="true"></span>
+              <span class="tab-filename">movieflix.native.js</span>
+              <span class="tab-author">Rimjhim</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">MovieFlix — Movie Discovery App</h3>
+              <p class="project-desc">
+                Real-time movie data from the OMDB API, sorted into Hollywood,
+                Bollywood, and All Movies sections, with detail screens and
+                trailer support.
+              </p>
+              <ul class="project-points">
+                <li>Live OMDB API integration — titles, posters, ratings</li>
+                <li>Category browsing across curated sections</li>
+                <li>Full detail screens with trailer playback</li>
+              </ul>
+              <div class="project-tags">
+                <span>React Native</span><span>OMDB API</span><span>Axios</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Project 5 -->
+          <a
+            class="project-card"
+            data-author="both"
+            href="eleventhsquare.html"
+          >
+            <div class="project-tab">
+              <span class="tab-dot dot-both" aria-hidden="true"></span>
+              <span class="tab-filename">eleventh-square.html</span>
+              <span class="tab-author">Ayushmaan + Rimjhim</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Eleventh Square — Client Website</h3>
+              <p class="project-desc">
+                A multi-page agency-style website built as a client project —
+                brand, services, and content pages carrying one consistent
+                visual identity throughout.
+              </p>
+              <ul class="project-points">
+                <li>Multi-page structure: Home, About, Brand, Contact</li>
+                <li>
+                  Service pages spanning Digital, Strategy, Identity &amp; more
+                </li>
+                <li>
+                  Blog section plus Terms &amp; Conditions, fully linked up
+                </li>
+              </ul>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Project 6 — the pitch to future clients -->
+          <article class="project-card project-card-cta" data-author="both">
+            <div class="project-tab project-tab-cta">
+              <span class="tab-dot dot-live" aria-hidden="true"></span>
+              <span class="tab-filename">your-project.fig</span>
+              <span class="tab-author">Coming soon — maybe yours</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">
+                Planning a travel or booking platform?
+              </h3>
+              <p class="project-desc">
+                We design in Figma first — user flows, wireframes, a full visual
+                system — then build it in React so what ships matches what was
+                approved. If you're scoping a travel agency site or app, this is
+                exactly the kind of project we want next.
+              </p>
+              <a href="#contact" class="btn btn-primary btn-sm"
+                >Tell us about it</a
+              >
+            </div>
+          </article>
+        </div>
+
+        <div class="see-more-wrap">
+          <a href="all-projects.html" class="btn btn-ghost-light"
+            >See all projects →</a
+          >
+        </div>
+      </section>
+
+      <!-- ============ SKILLS ============ -->
+      <section class="skills" id="skills">
+        <div class="section-head">
+          <p class="section-eyebrow">// stack.config</p>
+          <h2 class="section-title">What's installed</h2>
+          <p class="section-sub">
+            From wireframe to shipped build — design tooling on one side,
+            engineering on the other, meeting in the middle.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-panel">
+            <div class="skill-panel-head">
+              <span class="skill-icon" aria-hidden="true">◆</span>
+              <h3>Design &amp; UI/UX</h3>
+            </div>
+            <ul class="chip-list">
+              <li class="chip">Figma</li>
+              <li class="chip">Wireframing</li>
+              <li class="chip">Prototyping</li>
+              <li class="chip">Design Systems</li>
+              <li class="chip">User Flows</li>
+              <li class="chip">Responsive Layout</li>
+            </ul>
+          </div>
+
+          <div class="skill-panel">
+            <div class="skill-panel-head">
+              <span class="skill-icon" aria-hidden="true">▲</span>
+              <h3>Languages</h3>
+            </div>
+            <ul class="chip-list">
+              <li class="chip">JavaScript (ES6+)</li>
+              <li class="chip">HTML5</li>
+              <li class="chip">CSS3</li>
+            </ul>
+          </div>
+
+          <div class="skill-panel">
+            <div class="skill-panel-head">
+              <span class="skill-icon" aria-hidden="true">●</span>
+              <h3>Frontend &amp; Mobile</h3>
+            </div>
+            <ul class="chip-list">
+              <li class="chip">React.js</li>
+              <li class="chip">React Native</li>
+              <li class="chip">Bootstrap</li>
+              <li class="chip">Tailwind CSS</li>
+              <li class="chip">Expo</li>
+            </ul>
+          </div>
+
+          <div class="skill-panel">
+            <div class="skill-panel-head">
+              <span class="skill-icon" aria-hidden="true">■</span>
+              <h3>State &amp; Data</h3>
+            </div>
+            <ul class="chip-list">
+              <li class="chip">Redux Toolkit</li>
+              <li class="chip">Redux Thunk</li>
+              <li class="chip">Context API</li>
+              <li class="chip">Axios / REST APIs</li>
+              <li class="chip">Firebase</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ ABOUT ============ -->
+      <section class="about" id="about">
+        <div class="section-head">
+          <p class="section-eyebrow">// team.json</p>
+          <h2 class="section-title">Who's behind the cursor</h2>
+        </div>
+
+        <div class="about-grid">
+          <article class="about-card">
+            <div class="about-card-top">
+              <span class="about-avatar avatar-ay" aria-hidden="true">AY</span>
+              <div>
+                <h3>Ayushmaan Singh Yadav</h3>
+                <p class="about-role">Frontend &amp; Mobile App Developer</p>
+              </div>
+            </div>
+            <p class="about-bio">
+              Detail-oriented developer focused on responsive web and mobile
+              builds — React.js on the front end, React Native for
+              cross-platform apps, with hands-on state management using Redux
+              Toolkit, Redux Thunk, and Context API. Also designs in Figma, so
+              the handoff between design and code happens inside one head.
+            </p>
+            <div class="about-links">
+              <a
+                href="https://github.com/asteriskayush007"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub ↗</a
+              >
+              <a
+                href="https://linkedin.com/in/ayushmaansinghyadav"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn ↗</a
+              >
+            </div>
+          </article>
+
+          <article class="about-card">
+            <div class="about-card-top">
+              <span class="about-avatar avatar-rm" aria-hidden="true">RM</span>
+              <div>
+                <h3>Rimjhim Mishra</h3>
+                <p class="about-role">Frontend &amp; Mobile App Developer</p>
+              </div>
+            </div>
+            <p class="about-bio">
+              Builds clean, maintainable interfaces in React.js and React
+              Native, with a steady hand for CRUD-heavy apps and real-time
+              features — chat, media browsing, task management. Comfortable
+              owning a UI end-to-end, from the first Figma frame to the deployed
+              screen.
+            </p>
+            <div class="about-links">
+              <a
+                href="https://github.com/mishraji654"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub ↗</a
+              >
+              <a
+                href="https://linkedin.com/in/rimjhimmishra"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn ↗</a
+              >
+            </div>
+          </article>
+        </div>
+
+        <p class="about-note">
+          Both of us studied B.Tech Computer Science at SR Institute of
+          Management &amp; Technology, Lucknow — same college, same cohort, now
+          the same studio.
+        </p>
+      </section>
+
+      <!-- ============ CONTACT ============ -->
+      <section class="contact" id="contact">
+        <div class="contact-inner">
+          <div class="contact-copy">
+            <p class="section-eyebrow">// contact.send()</p>
+            <h2 class="section-title">Have a project in mind?</h2>
+            <p class="section-sub">
+              Web app, mobile app, or a Figma design pass before either — tell
+              us what you're building and we'll get back to you.
+            </p>
+            <div class="contact-direct">
+              <a href="mailto:ayushmaansinghyadav18@gmail.com"
+                >ayushmaansinghyadav18@gmail.com</a
+              >
+              <a href="mailto:mishrarimjhim.009@gmail.com"
+                >mishrarimjhim.009@gmail.com</a
+              >
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                autocomplete="name"
+              />
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                autocomplete="email"
+              />
+            </div>
+            <div class="form-row">
+              <label for="projectType">Project type</label>
+              <select id="projectType" name="projectType">
+                <option value="web">Web app</option>
+                <option value="mobile">Mobile app (React Native)</option>
+                <option value="figma">Figma / UI design</option>
+                <option value="other">Something else</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              Send message
+            </button>
+            <p
+              class="form-status"
+              id="formStatus"
+              role="status"
+              aria-live="polite"
+            ></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        © <span id="year"></span> Ayushmaan Singh Yadav &amp; Rimjhim Mishra.
+        Built with HTML, CSS &amp; JS — no framework, on purpose.
+      </p>
+      <a href="#top" class="footer-top">Back to top ↑</a>
+    </footer>
+
+    <script>
+      // Respect reduced-motion — skip the animated intro entirely
+      const prefersReducedMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)",
+      ).matches;
+
+      if (!prefersReducedMotion && typeof gsap !== "undefined") {
+        gsap.registerPlugin(ScrollTrigger);
+
+        window.addEventListener("load", () => {
+          gsap
+            .timeline({
+              scrollTrigger: {
+                trigger: ".intro-wrapper",
+                start: "top top",
+                end: "+=150%",
+                pin: true,
+                scrub: true,
+              },
+            })
+            .to(".intro-hole", {
+              scale: 8,
+              z: 350,
+              transformOrigin: "center center",
+              ease: "power1.inOut",
+            })
+            .to(
+              ".intro-section-bg",
+              {
+                scale: 1.1,
+                transformOrigin: "center center",
+                ease: "power1.inOut",
+              },
+              "<",
+            )
+            .to(
+              ".intro-scroll-cue",
+              {
+                opacity: 0,
+                duration: 0.2,
+              },
+              0,
+            )
+            .set(".intro-wrapper", {
+              onComplete: () => {
+                document.getElementById("introWrapper").style.display = "none";
+              },
+            });
+        });
+      }
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

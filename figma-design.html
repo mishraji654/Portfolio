@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tour-Mania — Ayushmaan & Rimjhim</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="project-detail.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="nav-inner">
+        <a href="./index.html" class="nav-logo"
+          ><span class="logo-bracket">&lt;</span>Portfolio<span
+            class="logo-bracket"
+            >/&gt;</span
+          ></a
+        >
+        <nav class="nav-links" aria-label="Primary">
+          <a href="./index.html#work">Work</a>
+          <a href="./index.html#skills">Skills</a>
+          <a href="./index.html#about">About</a>
+          <a href="./index.html#contact" class="nav-cta">Start a project</a>
+        </nav>
+      </div>
+    </header>
+    <main class="pd-main">
+      <div class="pd-header">
+        <a href="./index.html#work" class="pd-back">← Back to work</a>
+        <p class="section-eyebrow">// tour-mania.fig</p>
+        <h1 class="pd-title">Tour-Mania — Travel Companion Landing Page</h1>
+        <p class="pd-sub">
+          A landing page concept for a platform that matches people to travel
+          with — built as a Figma design file, shown live below.
+        </p>
+        <div class="pd-meta">
+          <span><strong>Built by</strong> Ayushmaan + Rimjhim</span>
+          <span><strong>Tool</strong> Figma</span>
+          <span><strong>Type</strong> Travel platform landing page</span>
+        </div>
+      </div>
+
+      <div class="pd-embed-wrap">
+        <iframe
+          src="https://embed.figma.com/design/X4D10tfngocgSNzEFOLQDi?embed-host=share"
+          allowfullscreen
+          title="Tour-Mania Figma design"
+        ></iframe>
+      </div>
+      <p class="pd-embed-note">
+        If this shows a lock icon instead of the design, open the file in Figma
+        → Share → set "Anyone with the link" to Viewer, then reload this page.
+      </p>
+
+      <div class="pd-details">
+        <h2>What's in it</h2>
+        <ul class="pd-points">
+          <li>
+            Hero section — "Let's Find Partner to Travel the World," with a Find
+            Now call-to-action
+          </li>
+          <li>Full-width imagery built around real travel moments</li>
+          <li>
+            A testimonial section with three traveler quotes and named avatars
+          </li>
+          <li>Footer with topic links and social icons for Tourmania.com</li>
+        </ul>
+        <p class="pd-todo-note">
+          This one's a direct fit for the travel agency work you mentioned —
+          worth showing this first if that conversation moves forward.
+        </p>
+
+        <div class="pd-links">
+          <a
+            href="https://www.figma.com/design/X4D10tfngocgSNzEFOLQDi/Untitled?node-id=0-1&t=Vek1a7Z3lXbe3Mdb-1"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-ghost-light"
+            >Open in Figma ↗</a
+          >
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>
+        © <span id="year"></span> Ayushmaan Singh Yadav &amp; Rimjhim Mishra.
+      </p>
+      <a href="./index.html#top" class="footer-top">Back to top ↑</a>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

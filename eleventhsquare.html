@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eleventh Square — Ayushmaan & Rimjhim</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css">
+<link rel="stylesheet" href="project-detail.css">
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="./index.html" class="nav-logo"><span class="logo-bracket">&lt;</span>Portfolio<span class="logo-bracket">/&gt;</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="./index.html#work">Work</a>
+      <a href="./index.html#skills">Skills</a>
+      <a href="./index.html#about">About</a>
+      <a href="./index.html#contact" class="nav-cta">Start a project</a>
+    </nav>
+  </div>
+</header>
+<main class="pd-main">
+  <div class="pd-header">
+    <a href="./index.html#work" class="pd-back">← Back to work</a>
+    <p class="section-eyebrow">// eleventh-square-internship-project</p>
+    <h1 class="pd-title">Eleventh Square — Client Website</h1>
+    <p class="pd-sub">A multi-page agency-style website built as a client project, covering brand identity, services, and content pages — from Home and About through Blog, Digital, Strategy, and Contact.</p>
+    <div class="pd-meta">
+      <span><strong>Built by</strong> Ayushmaan Singh Yadav</span>
+      <span><strong>Type</strong> Client / Internship Project</span>
+      <span><strong>Stack</strong> HTML, CSS, JavaScript</span>
+    </div>
+  </div>
+  <div class="pd-gallery">
+    <figure class="pd-shot">
+      <img src="El1.png" alt="Eleventh Square — homepage" onerror="this.parentElement.classList.add('img-missing')">
+      <figcaption>Homepage</figcaption>
+    </figure>
+    <figure class="pd-shot">
+      <img src="El2.png" alt="Eleventh Square — service pages" onerror="this.parentElement.classList.add('img-missing')">
+      <figcaption>Service pages — Digital, Strategy, Identity &amp; more</figcaption>
+    </figure>
+  </div>
+  <div class="pd-details">
+    <h2>What we built</h2>
+    <ul class="pd-points">
+      <li>Multi-page structure spanning Home, About, Brand, and Contact</li>
+      <li>Dedicated service pages — Digital, Strategy, Identity, Copywriting, Storytelling, Promotions</li>
+      <li>A blog section with multiple posts, plus Terms &amp; Conditions</li>
+      <li>Consistent visual identity carried across every page</li>
+    </ul>
+    <div class="pd-links">
+      <a href="https://github.com/asteriskayush007/Eleventh-Square-Internship-Project" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View on GitHub</a>
+      <a href="https://eleventhsquare.com/" class="btn btn-ghost-light">View live demo</a>
+    </div>
+  </div>
+</main>
+<footer class="footer">
+  <p>© <span id="year"></span> Ayushmaan Singh Yadav &amp; Rimjhim Mishra.</p>
+  <a href="./index.html#top" class="footer-top">Back to top ↑</a>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MovieFlix — Ayushmaan & Rimjhim</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css">
+<link rel="stylesheet" href="project-detail.css">
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="./index.html" class="nav-logo"><span class="logo-bracket">&lt;</span>Portfolio<span class="logo-bracket">/&gt;</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="./index.html#work">Work</a>
+      <a href="./index.html#skills">Skills</a>
+      <a href="./index.html#about">About</a>
+      <a href="./index.html#contact" class="nav-cta">Start a project</a>
+    </nav>
+  </div>
+</header>
+<main class="pd-main">
+  <div class="pd-header">
+    <a href="./index.html#work" class="pd-back">← Back to work</a>
+    <p class="section-eyebrow">// movieflix.native.js</p>
+    <h1 class="pd-title">MovieFlix — Movie Discovery App</h1>
+    <p class="pd-sub">Real-time movie data from the OMDB API, sorted into Hollywood, Bollywood, and All Movies sections, with detail screens and trailer support.</p>
+    <div class="pd-meta">
+      <span><strong>Built by</strong> Rimjhim Mishra</span>
+      <span><strong>Timeline</strong> Apr 2025</span>
+      <span><strong>Stack</strong> React Native, OMDB API, Axios</span>
+    </div>
+  </div>
+  <div class="pd-gallery">
+    <figure class="pd-shot">
+      <img src="MV1.png" alt="MovieFlix — main browsing page" onerror="this.parentElement.classList.add('img-missing')">
+      <figcaption>Main page — category browsing</figcaption>
+    </figure>
+    <figure class="pd-shot">
+      <img src="MV6.png" alt="MovieFlix — movie detail screen" onerror="this.parentElement.classList.add('img-missing')">
+      <figcaption>Detail screen with trailer playback</figcaption>
+    </figure>
+    <figure class="pd-shot">
+      <img src="MV2.png" alt="MovieFlix — AI chat feature" onerror="this.parentElement.classList.add('img-missing')">
+      <figcaption>AI chat — movie recommendations</figcaption>
+    </figure>
+    <figure class="pd-shot">
+      <img src="MV5.png" alt="MovieFlix — AI result screen" onerror="this.parentElement.classList.add('img-missing')">
+      <figcaption>AI-generated results</figcaption>
+    </figure>
+    <figure class="pd-shot">
+      <img src="MV3.png" alt="MovieFlix — camera feature" onerror="this.parentElement.classList.add('img-missing')">
+      <figcaption>Camera feature</figcaption>
+    </figure>
+    <figure class="pd-shot">
+      <img src="MV4.png" alt="MovieFlix — camera feature" onerror="this.parentElement.classList.add('img-missing')">
+      <figcaption>Camera feature</figcaption>
+    </figure>
+  </div>
+  <div class="pd-details">
+    <h2>What we built</h2>
+    <ul class="pd-points">
+      <li>Live OMDB API integration — titles, posters, ratings, descriptions</li>
+      <li>Category browsing across curated sections</li>
+      <li>Full detail screens with trailer playback</li>
+      <li>Smooth navigation and efficient state management</li>
+    </ul>
+    <div class="pd-links">
+      <a href="https://github.com/mishraji654/MovieAi.git" class="btn btn-primary">View live demo</a>
+      <a href="https://github.com/mishraji654/MovieAi.git" class="btn btn-ghost-light">View on GitHub</a>
+    </div>
+  </div>
+</main>
+<footer class="footer">
+  <p>© <span id="year"></span> Ayushmaan Singh Yadav &amp; Rimjhim Mishra.</p>
+  <a href="./index.html#top" class="footer-top">Back to top ↑</a>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

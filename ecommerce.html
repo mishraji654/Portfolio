@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-Commerce Platform — Ayushmaan & Rimjhim</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css">
+<link rel="stylesheet" href="project-detail.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="./index.html" class="nav-logo"><span class="logo-bracket">&lt;</span>Portfolio<span class="logo-bracket">/&gt;</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="./index.html#work">Work</a>
+      <a href="./index.html#skills">Skills</a>
+      <a href="./index.html#about">About</a>
+      <a href="./index.html#contact" class="nav-cta">Start a project</a>
+    </nav>
+  </div>
+</header>
+
+<main class="pd-main">
+  <div class="pd-header">
+    <a href="./index.html#work" class="pd-back">← Back to work</a>
+    <p class="section-eyebrow">// ecommerce-frontend.jsx</p>
+    <h1 class="pd-title">E-Commerce Platform</h1>
+    <p class="pd-sub">A full client + admin experience — browsing, cart, checkout on one side; complete CRUD product management with live REST APIs and dynamic routing on the other.</p>
+    <div class="pd-meta">
+      <span><strong>Built by</strong> Ayushmaan Singh Yadav</span>
+      <span><strong>Timeline</strong> March 2025 – Apr 2025</span>
+      <span><strong>Stack</strong> React.js, Axios, JSON Server, Routing</span>
+    </div>
+  </div>
+
+  <!--
+    ADD YOUR PROJECT IMAGES HERE.
+    Drop image files into this same /projects folder (e.g. ecommerce-1.png)
+    then replace the src below with your filename.
+  -->
+  <div class="pd-gallery">
+    <figure class="pd-shot">
+      <img src="./jwell1.png" alt="E-Commerce Platform — client browsing view" onerror="this.parentElement.classList.add('img-missing')">
+      <figcaption>Client panel — product browsing &amp; cart</figcaption>
+    </figure>
+    <figure class="pd-shot">
+      <img src="./jwell3.png" alt="E-Commerce Platform — admin panel" onerror="this.parentElement.classList.add('img-missing')">
+      <figcaption>Admin panel — CRUD product management</figcaption>
+    </figure>
+  </div>
+
+  <div class="pd-details">
+    <h2>What we built</h2>
+    <ul class="pd-points">
+      <li>Interactive client panel with cart, product detail views, and smooth navigation</li>
+      <li>Admin panel with full create / update / delete flows for product listings</li>
+      <li>REST API integration with Axios and dynamic routing for real-time data</li>
+      <li>Responsive UI tested across mobile, tablet, and desktop breakpoints</li>
+    </ul>
+
+    <div class="pd-links">
+      <!-- Replace # with your live demo / GitHub repo links -->
+      <a href="https://mishraji654.github.io/jewellary-1/#" class="btn btn-primary">View live demo</a>
+      <a href="https://github.com/mishraji654/jewellary-1" class="btn btn-ghost-light">View on GitHub</a>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Ayushmaan Singh Yadav &amp; Rimjhim Mishra.</p>
+  <a href="./index.html#top" class="footer-top">Back to top ↑</a>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
